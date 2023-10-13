@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+
+            position: absolute;
+            display: block;
+            background-image: none;
+            position: absolute;
+
+
+            animation: MoveUpDown 1s infinite alternate;
+        }
+
+        @-webkit-keyframes MoveUpDown {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+
+
+        }
+        .h1{
+            text-align: center;
+            padding-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img src="heart.png" width="100%">
+
+    </div>
+    <div class="h1">
+        <h1> Thank You for your participation</h1>
+    </div>
+</body>
+
+</html>

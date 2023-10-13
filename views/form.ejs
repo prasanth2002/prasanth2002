@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: whitesmoke;
+
+
+        }
+
+        form {
+            padding-top: 100px;
+        }
+
+        .text {
+            text-align: center;
+            color: crimson;
+            font-size: x-large;
+            font-family: 'Cormorant Garamond', serif;
+            background-color: transparent;
+        }
+
+        .input-text {
+
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+        }
+
+        .input-text input {
+            border: 1px solid black;
+            border-radius: 8px;
+            width: 200px;
+            height: 30px;
+        }
+
+        input[type=text] {
+            padding-left: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        input[type=Number] {
+            padding-left: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+        }
+
+        .bn3 {
+            display: inline-block;
+            padding: 0.5em 1.7em;
+            margin: 0 0.1em 0.1em 0;
+            border: 0.16em solid rgb(255, 255, 255);
+            border-radius: 2em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            color: #ffffff;
+            background-color: black;
+            text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .bn3:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+        .text img {
+            padding: -30px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="api/users" method="post">
+    
+        <div class="text">
+            <h1> Join Us </h1>
+          
+             <img src="png.png"  width="30px"/>
+        </div>
+        <div class="input-text">
+            <input type="text" name="username" placeholder="Enter The Name" />
+        </div>
+        <div class="input-text">
+            <input type="number" name="number" placeholder="Enter the Mobile Number" />
+        </div>
+        <div class="input-text">
+            <input type="text" name="mail" placeholder="Enter The Email" />
+        </div>
+        <div class="input-text">
+            <input type="text" name="bloodgroup" placeholder="Enter The Blood Group">
+        </div>
+
+        <div class="btn">
+            <button class="bn3" type="submit"> button</button>
+
+        </div>
+    </form>
+</body>
+
+</html>

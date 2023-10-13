@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      position: relative;
+
+    }
+
+    .mobile img {
+      width: 100%;
+      height: 100%;
+
+
+    }
+
+    .heading {
+      position: absolute;
+      font-family: 'Cormorant Garamond', serif;
+      top: 15%;
+      font-size: large;
+      color: crimson;
+
+    }
+
+    .heading2 {
+      font-size: medium;
+      text-align: center;
+    }
+
+
+
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 35%;
+    }
+
+    .button-30 {
+      align-items: center;
+      appearance: none;
+      background-color: #FCFCFD;
+      border-radius: 4px;
+      border-width: 0;
+      box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      box-sizing: border-box;
+      color: #36395A;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: "JetBrains Mono", monospace;
+      height: 58px;
+      justify-content: center;
+      line-height: 1;
+      list-style: none;
+      overflow: hidden;
+      padding-left: 16px;
+      padding-right: 16px;
+      position: relative;
+      text-align: left;
+      text-decoration: none;
+      transition: box-shadow .15s, transform .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      will-change: box-shadow, transform;
+      font-size: 18px;
+    }
+
+    .button-30:focus {
+      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    .button-30:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+
+    .button-30:active {
+      box-shadow: #D6D6E7 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+
+    .img img {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 62.5%;
+      left: 10%;
+      width: 300px;
+      height: auto;
+  
+    }
+    @media only screen and (min-width: 400px) { 
+      .img img {
+      padding-top:10px;
+      }
+    }
+    @media only screen and (min-width: 500px) { 
+      .img img {
+        padding-top: 125px;
+      padding-left:80px;
+      }
+    }
+    @media only screen and (min-width: 600px) {
+      .heading {
+        font-size: xx-large;
+      }
+      .heading2 {
+        font-size: x-large;
+      }
+    
+      .button-30{
+      width: 300px;
+      height:80px;
+      }
+      .img  img {
+        width: 600px;
+        padding-top: 75px;
+     padding-left: 50px;
+         
+      }
+      @media only screen and (min-width: 700px) { 
+
+        .img  img {
+        width: 450px;
+        padding-top: -90px;
+     padding-left: 70px;
+         
+      }
+        
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mobile">
+    <img src="mobile.png" />
+
+    <div class="heading">
+     
+      <h1> Be The Reason For  </h1>
+      <h1 class="heading2"> Someone's Heartbeat</h1>
+    
+    </div>
+
+    <div class="button">
+
+      <a href="/form" class="button-30" role="button"> click to Donate</a>
+    </div>
+    <div class="img">
+
+      <img src="blood.png" alt="" srcset="" width="100%">
+    </div>
+  </div>
+</body>
+
+</html>
